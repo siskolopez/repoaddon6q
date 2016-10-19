@@ -2,7 +2,7 @@
 <addon id="plugin.video.addon6q"
        name="[COLOR gray][B]Addon[COLOR yellow]6q[/COLOR][/B][/COLOR]"
        version="1.0.0"
-       provider-name="sisko lopez">
+       provider-name="6q">
        
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
