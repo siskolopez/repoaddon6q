@@ -1,0 +1,198 @@
+Quasar changelog
+======
+
+[B]v0.9.35[/B] - Sep 20 2016
+Maintenance release
+
+- Subtract seeders from peer count
+- Updated Spanish translations
+- libtorrent 1.0.10
+- golang 1.7.1
+
+[B]v0.9.34[/B] - May 4 2016
+- Fixed issue updating skin add-ons, #41
+- Moved up Trakt under Search
+- Added missing Top rated and Most voted shows
+- Fixed speed wrongly displayed as kb/s, #473
+- Updated golang to 1.6.2
+- Updated OpenSSL to 1.0.2h
+- Updated translations
+
+[B]v0.9.33[/B] - Mar 17 2016
+- Keep track of previously chosen torrents, #148
+- Fix TvShowTitle InfoLabel for episodes and seasons, #395
+- Handle canceling Trakt authentication
+- Use pagination setting for Trakt only, TMDB doesn't support it
+- Added search history, #411
+- Added H.265 codec tag
+- Updated translations
+
+[B]v0.9.32[/B] - Mar 15 2016
+- Fixed stop action of Trakt scrobble
+- Fixed library update delay on startup
+
+[B]v0.9.31[/B] - Mar 15 2016
+- Added Trakt scrobbling
+- Improved error handling
+- Setting for library update delay on startup (was fixed at 60 seconds)
+- Fixed mixed type external IDs from TMDB causing crash in Shows lists
+- Translations
+
+[B]v0.9.30[/B] - Mar 13 2016
+- Improve error handling and fix http error on Trakt authorization, #387
+- Add support for CloudHole API key
+- Updated translations
+
+[B]v0.9.29[/B] - Mar 13 2016
+- Hotfix: Trakt.tv authentication only required in relevant sections, #383
+
+[B]v0.9.28[/B] - Mar 13 2016
+- Hotfix: Only fetch CloudHole clearances when required and re-use them
+
+See the [CloudHole](https://github.com/scakemyer/cloudhole) and [CloudHole API](https://github.com/scakemyer/cloudhole-api) projects for details.
+
+Also check out the [Firefox add-on](https://addons.mozilla.org/addon/cloudhole/).
+
+
+[B]v0.9.27[/B] - Mar 13 2016
+- Added Trakt list integration, #31
+- Updated translations
+
+[B]v0.9.26[/B] - Mar 9 2016
+- Added share ratio, seed time ratio and seed time limits, #147
+- Added option to disable DHT for use with private trackers, #38 #262
+- Added option for adding Specials to library, #104
+- Moved top Trakt lists to own sub-section with new icons
+- Toggle Add to library and Remove from library, #259
+- Replaced 'Enable pagination' with 'Results per page' setting
+- Apply pagination to searches and IMDB top 250, #279 #313
+- Toggle pause/resume for torrents and session
+- Show seeding ratios/time in torrents list, #215
+
+[B]v0.9.25[/B] - Mar 3 2016
+- Fix for Raspberry Pi 2/3, #331
+- Fix absolute number for Anime episodes, #330
+- Disabled background handling by default
+
+**For those on Raspberry Pi 2 or 3, you will need to update
+manually using the [linux_armv7 package](https://github.com/scakemyer/plugin.video.quasar/releases/download/v0.9.25/plugin.video.quasar-0.9.25.linux_armv7.zip) or the [all-binaries package](https://github.com/scakemyer/plugin.video.quasar/releases/download/v0.9.25/plugin.video.quasar-0.9.25.zip)**
+
+[B]v0.9.24[/B] - Mar 2 2016
+- Added support for linux-armv7 and linux-arm64, #26
+- Fixed shutdown crash on Windows, #214
+- More InfoLabels to VideoPlayer for skins, #256
+- Updated libtorrent to 1.0.9 and OpenSSL to 1.0.2g
+- Updated translations
+
+[B]v0.9.23[/B] - Feb 20 2016
+- Added `search_season` method for providers to support complete season search, #195
+- Fix for subtitles and write permission errors of temp files on some Android setups, #78
+- Improved fix for episodes missing translated title, #249
+- Pass a few more InfoLabels to VideoPlayer, #256
+- Translations
+
+[B]v0.9.22[/B] - Feb 19 2016
+- Added resolution preferences and balanced mode
+- Fix for missing episode titles, #249
+- Set HDTV only streams to 480p
+- Recent episodes of last 3 days instead of last week
+- Catch SystemExit exceptions, possible fix for #214
+
+[B]v0.9.21[/B] - Feb 18 2016
+- Added Trakt top lists
+- Fixed providers receiving translated TV show name
+- Prevent download path from being empty
+- Translations
+
+[B]v0.9.20[/B] - Feb 17 2016
+- Fixed library integration after switch to TMDB for all TV Shows data, #228
+- Fixed backdrop images for Episodes
+- Fixed forum link in add-on description
+- Eased out rate limiter for longer lists
+- Translations
+
+Please remove your `QuasarDB.json` before or after this update, otherwise
+you'll see `Panic recovery -> Bad status: 404` errors followed by Golang
+stacktraces. Apologies for the inconvenience, but those are still pre-1.0
+releases.
+
+[B]v0.9.19[/B] - Feb 17 2016
+- Added setting for personal TheMovieDB API key
+- Fixed new default key and check on startup, #226
+- Added multi-cloud icon support for merged streams
+
+[B]v0.9.18[/B] - Feb 16 2016
+- Add icon support and color-coded resolutions, #171
+- Use proper background image for dialogs, #121
+- Add "Prefer use of original title" setting, #200
+- Toggle enable/disable in context menu for providers
+- Fixed KeyError in AddonCheck method
+- El translations
+
+[B]v0.9.17[/B] - Feb 14 2016
+- Fixed issue with some translations causing dialogs not to show up, #142
+- Fixed logging of built-in JSON-RPC server
+- Fixed mix-up between titles and original titles
+- Fixed buffer dialog kept in a silent loop after a "not enough space" error
+- Updated translations as usual
+
+[B]v0.9.16[/B] - Feb 14 2016
+- Default view per content type, #19
+- Remove use of distutils since it's missing on OpenELEC
+
+[B]v0.9.15[/B] - Feb 13 2016
+- Improved use of getLocalizedString, #142
+- Sort providers by Enabled and Status
+- Improved daemon logging
+- Updated translations
+
+[B]v0.9.14[/B] - Feb 13 2016
+- Fix usage of go-logging after breaking change in formatting
+
+[B]v0.9.13[/B] - Feb 13 2016
+- Health checks for providers
+- Prevent crash/restart loops
+- Overlay status vertical offset setting
+- Updated translations
+
+[B]v0.9.12[/B] - Feb 11 2016
+- Updated XML-based Choose stream dialog
+- Translation checks on future pull requests
+- Fixed Russian translation
+
+[B]v0.9.11[/B] - Feb 10 2016
+- More relevant Recently Released, #136
+- Fast resume files saved in Torrents folder, #138
+- Muchos Translations
+
+[B]v0.9.10[/B] - Feb 10 2016
+- Added Recently Released, Recent Shows and Recent Episodes sections
+- Refresh torrent list after resume/pause/delete actions
+- Updated translations
+
+[B]v0.9.9[/B] - Feb 8 2016
+- Fixed fast resume files loaded on startup regardless of Background handling setting, #101
+- Fixed checking available space and remove from background download if it fails, #109
+- Fixed background dialog still showing up for paused torrents
+- Torrents list now shows status and progress
+- Added Resume and Pause context menus for torrents and whole session
+- Added support to play torrent files #22
+- Library integration now ignores non-aired shows
+- Cleanly shutdown daemon on exit and close all dialogs
+
+[B]v0.9.8[/B] - Feb 6 2016
+- Added background progress dialog
+
+[B]v0.9.7[/B] - Feb 6 2016
+- Background handling of streams
+- Fast resume support
+- Load streams from fast resume data on startup
+- Updated translations
+
+
+[B]v0.9.6[/B] - Feb 5 2016
+- Revamped list view of available streams #43
+- Generate changelog with dates from release notes
+- Fixed version display of built-in repository
+
+
