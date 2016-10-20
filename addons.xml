@@ -250,18 +250,18 @@ Gracias por su preferencia [COLOR cyan][B]BassFox[/B][/COLOR] based on Livetream
   </extension>
 </addon>
 
-<addon id="repository.kodi-addon6q" name="addon6q Official Repo" version="1.0.0" provider-name="addon6q">
-	<extension point="xbmc.addon.repository" name="addon6q official Repo">
-		<info compressed="false">https://raw.githubusercontent.com/siskolopez/repoaddon6q/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/siskolopez/repoaddon6q/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/siskolopez/repoaddon6q/master</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>addon6q Official Repository</summary>
-                <description lang="en">Install Addon Official addon6q and other add-ons that are complementary help in support links</description>
-   		<description lang="es">Instala el Addon Oficial addon6q y los otros add-ons que son complementos de ayuda en la reproduccion de las listas</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
+- <addon id="repository.kodi-addon6q" name="addon6q Official Repo" version="1.0.0" provider-name="addon6q">
+- <extension point="xbmc.addon.repository" name="addon6q official Repo">
+  <info compressed="false">https://raw.githubusercontent.com/siskolopez/repoaddon6q/master/addons.xml</info>
+  <checksum>https://raw.githubusercontent.com/siskolopez/repoaddon6q/master/addons.xml.md5</checksum>
+  <datadir zip="true">https://raw.githubusercontent.com/siskolopez/repoaddon6q/master</datadir>
+  </extension>
+- <extension point="xbmc.addon.metadata">
+  <summary>addon6q Official Repository</summary>
+  <description lang="en">Install Addon Official addon6q and other add-ons that are complementary help in support links</description>
+  <description lang="es">Instala el Addon Oficial addon6q y los otros add-ons que son complementos de ayuda en la reproduccion de las listas</description>
+  <disclaimer />
+  <platform>all</platform>
+  </extension>
+  </addon>
 </addons>
