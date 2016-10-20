@@ -1,0 +1,17 @@
+﻿<settings>
+  <category label="BassFox Addon">
+	<setting type="lsep" label="[COLOR dimgray]«–––––––ooO[/COLOR](•(-•(-•( Actualización - Update 04/10/2016 )•-)•)•-)•[COLOR dimgray]Ooo––––-–––––––»[/COLOR]" option="close" action="RunPlugin(plugin://plugin.video.bassfox/?mode=7)" />
+        <setting type="lsep" label="[COLOR dimgray]«–––[/COLOR]•(-•( Gracias por tu Preferencia - Thank you for your preference )•-)•[COLOR dimgray]––––»[/COLOR]" option="close" action="RunPlugin(plugin://plugin.video.bassfox/?mode=7)" />
+        <setting id="ask_playlist_items" type="bool" label="[COLOR cyan]Ask playlist items to choose from dialog[/COLOR] [COLOR cyan] [ Elegir fuente de video activado por default ][/COLOR]" default="true" visible="false"/>
+        <setting id="add_playlist" type="bool" label="[COLOR cyan]Items with multiple links as play lists[/COLOR]  [COLOR cyan][ Multilink activado por default ][/COLOR]" default="true" visible="false"/>
+        <setting type="action" label="                               [COLOR cyan]»»» Presiona para activar Peliculas & Series «««[/COLOR]" option="close"  action="Container.Update(plugin://plugin.video.bassfox/?mode=125&ch_fanart=na)" visible="true"/>
+        <setting type="action" label="                                   [COLOR cyan]»»» Press to enable the Movies & Series «««[/COLOR]" option="close"  action="Container.Update(plugin://plugin.video.bassfox/?mode=125&ch_fanart=na)" visible="true"/>
+        <setting id="parentalblockedpin" label="                        [COLOR cyan]    Parental Block Pin[/COLOR]  [COLOR cyan][ Activar Pin Control Parental ][/COLOR]" type="text"  option="hidden"  default=""/>
+        <setting id="parentalblocked" label="                                     [COLOR cyan]Is Parental Blocked Applied?[/COLOR]" type="bool" default="false" enable="false"/>
+        <setting id="1080pquality" label="[COLOR cyan]Play 1080p video ON demand if available (Not live)[/COLOR]" type="bool" default="true"/>
+        <setting id="Updatecommonresolvers" label="Update Commonresolver from Genesis" type="bool" default="true" visible="false"/>
+        <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis"visible="false"/>
+        <setting id="donotshowbychannels" label="Do Not show items under channel name" type="bool" default="false" visible="false"/>
+        </category>
+
+</settings>
